@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+}
+
+.header {
+    background-color: lightblue;
+    display: flex;
+    /* gap: 1rem; */
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header > * {
+    flex-direction: row;
+    
+}
+
+.p-2 {
+    padding: 2rem;
+}
+
+.main {
+    background-color:lightgoldenrodyellow;
+}
+
+.post-card {
+    border: 1px solid red;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.post-header {
+    background-color: gray;
+    padding: 2rem;
+    border-radius: inherit;
+    border-bottom: 1px solid green;
+}
+
+.post-img {
+    height: 400px;    
+}
+
+.post-description {
+    border: 1px solid red;
+    border-radius: inherit;
+}
