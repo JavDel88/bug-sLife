@@ -6,6 +6,13 @@ html, body {
     margin: 0;
 }
 
+a {
+    color: deepskyblue;
+    font-size: 1.25rem;
+    font-weight: 800;
+    text-decoration: none;    
+}
+
 :root {
     --header-height: 75px;
 }
@@ -28,16 +35,20 @@ html, body {
     
 }
 
-.logo > img{
+.logo > img {
     height: 50px;
     width: 50px;
-    /* border: 1px solid white; */
     border-radius: 50%;
     box-shadow: 5px 5px 5px #999;
 }
 
+.logo > img:hover {
+    box-shadow: 5px 5px 5px green;
+}
+
 .page-title {
     font-family: 'Architects Daughter', cursive;
+    font-size: 2.5rem;
 }
 
 .uil-bars {
@@ -45,29 +56,64 @@ html, body {
     color: #999
 }
 
+.uil-bars:hover {
+    color: green;
+}
+
 .main {
     margin-top: var(--header-height);
-    background-color:lightgoldenrodyellow;
 }
 
 .post-card {
-    border: 1px solid red;
-    border-radius: 10px;
     width: 100%;
+    box-shadow:0px 10px 10px #999;
 }
 
 .post-header {
-    background-color: gray;
-    padding: 2rem;
-    border-radius: inherit;
-    border-bottom: 1px solid green;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    background-color: #eee;
+    padding: 1.5rem;
 }
 
-.post-img {
-    height: 400px;    
+.user-img > img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 5px #999;
+}
+
+.user-name {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.user-name > span {
+    font-size: 1.5rem;
+    font-weight: 800;
+
+}
+
+.post-img > img {
+    height: 100%;
+    width: 100%;
+}
+
+.post-interaction {
+    padding: 1rem;
+}
+
+.post-interaction > * {
+    font-size: 1.5rem;    
+}
+
+.post-interaction > .uil-heart:hover {
+    color: red;
 }
 
 .post-description {
-    border: 1px solid red;
-    border-radius: inherit;
+    padding-left: 1rem;
+    padding-bottom: 1rem;    
 }
