@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+}
+
+a {
+    color: deepskyblue;
+    font-size: 1.25rem;
+    font-weight: 800;
+    text-decoration: none;    
+}
+
+:root {
+    --header-height: 75px;
+}
+
+.header {
+    background-color: #eee;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var(--header-height);
+    justify-content: space-around;
+    align-items: center;
+    box-shadow:0px 5px 10px #999;
+}
+
+.header > * {
+    flex-direction: row;
+    
+}
+
+.logo > img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 5px #999;
+}
+
+.logo > img:hover {
+    box-shadow: 5px 5px 5px green;
+}
+
+.page-title {
+    font-family: 'Architects Daughter', cursive;
+    font-size: 2.5rem;
+}
+
+.uil-bars {
+    font-size: 2rem;
+    color: #999
+}
+
+.uil-bars:hover {
+    color: green;
+}
+
+.main {
+    margin-top: var(--header-height);
+}
+
+.post-card {
+    width: 100%;
+    box-shadow:0px 10px 10px #999;
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    background-color: #eee;
+    padding: 1.5rem;
+}
+
+.user-img > img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 5px #999;
+}
+
+.user-name {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.user-name > span {
+    font-size: 1.5rem;
+    font-weight: 800;
+
+}
+
+.post-img > img {
+    height: 100%;
+    width: 100%;
+}
+
+.post-interaction {
+    padding: 1rem;
+}
+
+.post-interaction > * {
+    font-size: 1.5rem;    
+}
+
+.post-interaction > .uil-heart:hover {
+    color: red;
+}
+
+.post-description {
+    padding-left: 1rem;
+    padding-bottom: 1rem;    
+}
+
+.section {
+    display : flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.footer {
+    display : flex;
+    justify-content: center;
+    align-items: center;    
+    padding: 2rem;
+}
